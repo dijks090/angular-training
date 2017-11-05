@@ -8,10 +8,14 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
+import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
+import { MovieListComponent } from './movies/movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieDetailComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,

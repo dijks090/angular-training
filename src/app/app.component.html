@@ -1,3 +1,18 @@
 <h1>
   {{title}}
 </h1>
+
+<div>
+
+  <ul>
+    <li *ngFor="let movie of movies" >
+        {{movie.name}}
+        <button (click)="onMovieClicked(movie)">bekijk ...</button>
+    </li>
+  </ul>
+
+
+</div>
+
+<cw-movie-detail *ngIf="selectedMovie" [movie]="selectedMovie"></cw-movie-detail>
+
